@@ -2,12 +2,11 @@
 
 * {
     box-sizing: border-box;  
-}
-
-html {
-    font-family: "Roboto";
+    scroll-behavior: smooth
 }
 
 body{
+    font-family: "Roboto";
     margin: 0;
+    font-optical-sizing: auto;
 }

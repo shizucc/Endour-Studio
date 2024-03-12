@@ -1,3 +1,7 @@
+.container {
+    background-color:chartreuse;
+    padding: 3rem
+}
 .title {
     color: red;
 }
