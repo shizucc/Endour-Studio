@@ -1,8 +1,8 @@
 import classes from "./intro.module.css";
-export default function Intro() {
+export default function Intro({ ...props }) {
   return (
     <>
-      <section className={classes.container}>
+      <section {...props} className={classes.container}>
         <h1 className={classes.title}>Ini adalah Intro</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eos iste

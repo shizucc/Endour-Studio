@@ -1,4 +1,4 @@
 import classes from "./about.module.css";
-export default function About() {
-  return <section className={classes.container}></section>;
+export default function About({ ...props }) {
+  return <section {...props} className={classes.container}></section>;
 }

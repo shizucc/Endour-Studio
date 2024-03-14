@@ -1,6 +1,7 @@
 .container {
     background-color: antiquewhite;
     padding: 3rem;
+    height: 800px;
 }
 .title {
     font-size: 1.5rem;

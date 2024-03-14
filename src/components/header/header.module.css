@@ -1,12 +1,20 @@
 .navigationBar {
-    display: flex;
+    position: sticky;
+    /* top: 0; */
     margin: 0;
-    justify-content: space-between;
-    padding: 0.5rem 3rem 0.5rem 2rem;
     align-items: center;
+    padding: 0.5rem 3rem 0.5rem 2rem;
     background-color: #5c8374;
-    box-shadow: 0px 1px 5px 1px black;
+    transition: top 0.75s;
 }
+.navigationBarVisible {
+    top:0;
+}
+
+.navigationBarHidden{
+    top: - 100px;
+}
+
 .navigationBar img {
     width: 3.5rem;
 }
@@ -36,8 +44,38 @@
     text-decoration: none;
 }
 
+.hamburgerIcon{
+    display: none;
+}
+
+
+.hamburgerMenu > ul {
+    list-style: none;
+    text-align: center;
+}
+.hamburgerMenu li {
+    padding: 0.75rem;
+}
+
+.hamburgerMenu a{
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+
 @media only screen and (max-width: 768px) {
+    .navigationBar img {
+        width: 2.25rem;
+    }
     .navigationMenu {
         display: none;
+    }
+    .navigationTitle {
+        display: none;
+    }
+    .hamburgerIcon{
+        display: block;
+        align-self: center;
     }
   }

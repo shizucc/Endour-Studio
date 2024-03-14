@@ -1,5 +1,5 @@
 import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import Header from "../../components/header/Header";
 import About from "./components/about/About";
 import Catalog from "./components/catalog/Catalog";
 import Intro from "./components/intro/Intro";
@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <Intro />
-        <Catalog />
-        <About />
+        <Intro id={"intro"} />
+        <Catalog id={"games"} />
+        <About id={"about"} />
       </main>
       <Footer />
     </>
