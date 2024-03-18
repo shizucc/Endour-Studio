@@ -1,8 +1,12 @@
 .container {
-    background-color: antiquewhite;
+    background-color: white;
     padding: 3rem;
 }
 .title {
     font-size: 1.5rem;
     color: blueviolet;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
 }
