@@ -4,7 +4,7 @@ function GameDetails({ title, cover, url, desc }) {
   return (
     <>
       <div className={styles.gameDetails}>
-        <a href={url}><img className={styles.gameCover} src={cover} alt="Cover Image"/></a>
+        <a href={url}><img className={styles.gameCover} src={cover} alt={"Cover Image"}/></a>
         <div className={styles.gameText}>
           <a href={url}><h1>{title}</h1></a>
           <p>{desc}</p>

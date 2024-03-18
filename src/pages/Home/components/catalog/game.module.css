@@ -1,5 +1,12 @@
 .gameBox {
     width: 100%;
+    padding-right: 2rem;
+    hr {
+        border-color: white;
+        border-width: 3px;
+        opacity: 30%;
+        width: 60%;
+    }
 }
 .gameDetails {
     display: flex;
@@ -11,29 +18,29 @@
 .gameCover {
     width: clamp(8rem, 20vw, 12rem);
     height: clamp(8rem, 20vw, 12rem);
+    border-radius: 30px;
 }
 .gameText {
     padding-left: 3rem;
-}
-h1 {
-    margin-top: 0;
-    font-size: clamp(1.5rem, 3vw, 3rem);
-}
-p {
-    font-weight: 300;
-    font-size: clamp(1.2rem, 1.5vw, 2rem);
-}
-a {
-    color: black;
-    text-decoration: none;
-}
-hr {
-    border-color: white;
-    border-width: 3px;
-    opacity: 30%;
-    width: 60vw;
+    h1 {
+        margin-top: 0;
+        font-size: clamp(1.5rem, 3vw, 3rem);
+    }
+    p {
+        font-weight: 300;
+        font-size: clamp(1.2rem, 1.5vw, 2rem); 
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
 }
 
+@media (max-width: 960px) {
+    .gameBox {
+        padding-right: 0;
+    }
+}
 
 @media (max-width: 678px) {
     .gameBox {

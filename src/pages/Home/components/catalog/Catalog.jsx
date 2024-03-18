@@ -1,4 +1,5 @@
 import Game from "./Game";
+import SideBar from "./Sidebar";
 import classes from "./catalog.module.css";
 import { games } from "./list_games";
 
@@ -12,6 +13,7 @@ export default function Catalog() {
           </li>
         ))}
       </ul>
+      <SideBar />
     </section>
   );
 }
