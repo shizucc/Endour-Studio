@@ -46,7 +46,7 @@
     animation: slideInFromBottom 1.2s ease-out;
 }
 
-img {
+.coloumn img {
     width: 527px;
     height: auto;
     position:absolute;
@@ -69,7 +69,7 @@ img {
       position: relative;
     }
 
-    img {
+    .coloumn img {
         z-index: 0;
         width: 400px;
         top: 30px;

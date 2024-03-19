@@ -6,6 +6,7 @@
     padding: 0.5rem 3rem 0.5rem 2rem;
     background-color: #5c8374;
     transition: top 0.75s;
+    z-index: 2;
 }
 .navigationBarVisible {
     top:0;
