@@ -1,9 +1,19 @@
 .container {
-    background-color: antiquewhite;
+    background-color: white;
     padding: 3rem;
-    height: 800px;
+    display: flex;
 }
 .title {
     font-size: 1.5rem;
     color: blueviolet;
+}
+.container ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+@media (max-width: 960px) {
+    .container {
+        display: block;
+    }
 }
