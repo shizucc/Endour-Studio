@@ -1,8 +1,100 @@
+/* Keyframes untuk animasi gerakan dari bawah ke atas */
+@keyframes slideInFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 .container {
-    background-color:chartreuse;
+    background-color:#1B4242;
     padding: 3rem;
-    height: 800px;
+    display: flex;
 }
+
+.coloumn {
+    width: 50vh;
+}
+
 .title {
-    color: red;
+    width: 70%;
+    color: white;
+    font-size: 64px;
+    margin: 24px 0px;
+    animation: slideInFromBottom 1.2s ease-out;
 }
+
+.desc {
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    animation: slideInFromBottom 1.2s ease-out;
+}
+
+.button {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    padding: 12px 28px;
+    border-radius: 12px;
+    background-color: #D9D9D9;
+    border: none;
+    font-size: 14px;
+    animation: slideInFromBottom 1.2s ease-out;
+}
+
+img {
+    width: 527px;
+    height: auto;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    animation: slideInFromBottom 1.3s ease-out;
+}
+
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: 450px;
+    }
+  
+    .coloumn {
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+
+    img {
+        z-index: 0;
+        width: 400px;
+        top: 30px;
+        right: 20px;
+    }
+  
+    .title {
+      font-size: 44px;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+    }
+  
+    .desc {
+      font-size: 16px;
+      width: 80%;
+      position: absolute;
+      top: 35%;
+      z-index: 1;
+    }
+  
+    .button {
+      font-size: 16px;
+      position: absolute;
+      top: 48%;
+      z-index: 1;
+    }
+  }

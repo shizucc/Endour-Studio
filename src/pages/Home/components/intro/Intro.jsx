@@ -2,13 +2,17 @@ import classes from "./intro.module.css";
 export default function Intro({ ...props }) {
   return (
     <>
-      <section {...props} className={classes.container}>
-        <h1 className={classes.title}>Ini adalah Intro</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eos iste
-          officiis, expedita possimus perferendis quod a culpa odio omnis amet,
-          nisi veniam nihil unde saepe quae iure reiciendis rem!
-        </p>
+      <section className={classes.container}>
+        <div className="coloumn">
+          <h1 className={classes.title}>What is Endour Studio?</h1>
+          <p className={classes.desc}>
+          "Endour Studio is an amateur game studio since 2021"
+          </p>
+          <button className={classes.button}>Let me know!</button>
+        </div>
+        <div className="coloumn">
+          <img src="src/assets/Logo.png" alt="" />
+        </div>
       </section>
     </>
   );
