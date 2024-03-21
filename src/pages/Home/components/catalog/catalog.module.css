@@ -1,6 +1,7 @@
 .container {
     background-color: white;
-    padding: 3rem;
+    padding-inline : 8rem;
+    padding-block: 4rem;
     display: flex;
 }
 .title {
@@ -15,5 +16,11 @@
 @media (max-width: 960px) {
     .container {
         display: block;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        display: block;
+        padding-inline: 2rem;
     }
 }
