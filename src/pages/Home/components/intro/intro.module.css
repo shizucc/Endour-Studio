@@ -12,27 +12,40 @@
 
 .container {
     background-color:#1B4242;
-    padding: 3rem;
+    padding-inline: 3rem;
+    padding-block: 4rem;
     display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
-.coloumn {
-    width: 50vh;
-}
 
 .title {
-    width: 70%;
     color: white;
     font-size: 64px;
-    margin: 24px 0px;
+    margin-block: 0px;
     animation: slideInFromBottom 1.2s ease-out;
 }
 
 .desc {
     color: white;
     font-size: 20px;
-    width: 50%;
     animation: slideInFromBottom 1.2s ease-out;
+    margin-bottom: 3rem;
+}
+
+.imageContent {
+  background-repeat: no-repeat;
+  background-image: url("../../assets/logo_for_glow.png");
+  background-size: clamp(200px,30vw,425px)
+}
+
+.imageContent img{
+
+  backdrop-filter: blur(10px) saturate(1);
+  width: clamp(200px,30vw,425px)
 }
 
 .button {
@@ -40,9 +53,11 @@
     margin-bottom: 24px;
     padding: 12px 28px;
     border-radius: 12px;
+    text-decoration: none;
     background-color: #D9D9D9;
     border: none;
     font-size: 14px;
+    color: #1B4242;
     animation: slideInFromBottom 1.2s ease-out;
 }
 
@@ -58,43 +73,10 @@
 
 /* Media query untuk tampilan mobile */
 @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      height: 450px;
-    }
-  
-    .coloumn {
-      width: 100%;
+    .mainContent {
       text-align: center;
-      position: relative;
     }
-
-    .coloumn img {
-        z-index: 0;
-        width: 400px;
-        top: 30px;
-        right: 20px;
-    }
-  
-    .title {
-      font-size: 44px;
-      width: 100%;
-      position: absolute;
-      z-index: 1;
-    }
-  
-    .desc {
-      font-size: 16px;
-      width: 80%;
-      position: absolute;
-      top: 35%;
-      z-index: 1;
-    }
-  
-    .button {
-      font-size: 16px;
-      position: absolute;
-      top: 48%;
-      z-index: 1;
+    .imageContent img{
+      display: none;
     }
   }
