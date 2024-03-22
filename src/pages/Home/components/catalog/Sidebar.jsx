@@ -1,12 +1,12 @@
 import styles from "./sidebar.module.css";
-
+import studioLogoImg from "../../assets/logo.png";
 export default function SideBar() {
   return (
     <aside>
       <div className={styles.sidebarCard}>
         <img
           className={styles.sidebarLogo}
-          src={"/src/pages/Home/assets/logo.png"}
+          src={studioLogoImg}
           alt={"Studio Logo"}
         />
         <div className={styles.sidebarText}>

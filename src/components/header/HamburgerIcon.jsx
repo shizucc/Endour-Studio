@@ -1,16 +1,24 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import classes from "./hamburger_icon.module.css";
 
 export default function HamburgerIcon({ isOpen, ...props }) {
+  const [firstLoad, setFirstLoad] = useState(true);
   const bar1 = useRef();
   const bar2 = useRef();
   const bar3 = useRef();
 
   useEffect(() => {
-    bar1.current.classList.toggle(classes.changeBar1);
-    bar2.current.classList.toggle(classes.changeBar2);
-    bar3.current.classList.toggle(classes.changeBar3);
+    if (!firstLoad) {
+      bar1.current.classList.toggle(classes.changeBar1);
+      bar2.current.classList.toggle(classes.changeBar2);
+      bar3.current.classList.toggle(classes.changeBar3);
+    }
   }, [isOpen]);
+
+  useEffect(() => {
+    setFirstLoad(false);
+  }, []);
+
   return (
     <>
       <div className={classes.container} {...props}>
