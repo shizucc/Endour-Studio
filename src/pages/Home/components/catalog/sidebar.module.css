@@ -26,6 +26,8 @@
         font-weight: 300;
         font-size: clamp(1.2rem, 2vw, 1.5rem);
     }
+
+  
 }
 .sidebarFooter {
     padding: 0 2rem;
@@ -49,5 +51,10 @@
         margin-top: 0.4rem;
         margin-bottom: 0.4rem;
         opacity: 60%;
+    }
+    a{
+        text-decoration: none;
+        color: #1B4242;
+        font-weight:600,
     }
 }

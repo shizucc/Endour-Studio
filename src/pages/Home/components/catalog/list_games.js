@@ -18,6 +18,6 @@ export const games = [
     cover: "src/pages/Home/assets/gamecover_twa.png",
     description:
       "Traffic Witch Academy is an endless game about traffic education, wrapped in magic and a fantasy world.",
-    url: "#",
+    url: "https://endourstudio.itch.io/traffic-witch-academy",
   },
 ];
