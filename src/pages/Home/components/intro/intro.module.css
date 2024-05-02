@@ -38,7 +38,7 @@
 
 .imageContent {
   background-repeat: no-repeat;
-  background-image: url("../../assets/logo_for_glow.png");
+  background-image: url("../../assets/logo_for_glow.webp");
   background-size: clamp(200px,30vw,425px)
 }
 

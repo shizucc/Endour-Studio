@@ -1,5 +1,5 @@
 import classes from "./intro.module.css";
-import endourStudioLogoImg from "../../assets/logo_for_glow.png";
+import endourStudioLogoImg from "../../assets/logo_for_glow.webp";
 
 export default function Intro({ ...props }) {
   return (
